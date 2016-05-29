@@ -30,11 +30,13 @@ EX) cd ~\
 
 git clone https://github.com/JohnPAguirre/SQLiteDotNetRC2DockerExample.git
 
-cd into the folder
+cd .\SQLiteDotNetRC2DockerExample\src\SQLiteTest\
 
 4) Lets use the build script to build and push to docker.  First command temporarily 
 enables executing powershell scripts
 
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force 
 
-.\src\SQLiteTest\buildContainer.ps1
+.\buildContainer.ps1
+
+Make sure to check out the bulidContanier.ps1 powershell script to see all the commands associated with this
