@@ -12,20 +12,20 @@ application a bit faster.
 
 Since I am fairly new to this entire process, these are the steps to get this enviroment up and running
 
-Steps to build
-1) download docker
+Steps to build 
+1) Download docker
 https://www.docker.com/products/docker-toolbox
 
-2) download git
+2) Download git
 https://git-scm.com/downloads
 
-3) download this repository
+3) Download this repository
 First open up a powershell window and navigate to some directory
 EX) cd ~\
 git clone https://github.com/JohnPAguirre/SQLiteDotNetRC2DockerExample.git
 cd into the folder
 
-4) lets use the build script to build and push to docker
-#temporarily enable executing powershell scripts
+4) Lets use the build script to build and push to docker.  First command temporarily 
+enables executing powershell scripts
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
 .\buildContainer.ps1
