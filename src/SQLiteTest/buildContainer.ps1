@@ -3,6 +3,8 @@ if (!(Test-Path .\Built)){
     mkdir .\Built
 }
 rm -r .\built\*
+#need to restore for brand new instances
+dotnet restore
 dotnet publish -o .\Built -f netcoreapp1.0 -r ubuntu.14.04-x64
 docker rmi test
 docker build -t test .

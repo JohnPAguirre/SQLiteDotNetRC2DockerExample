@@ -37,4 +37,4 @@ enables executing powershell scripts
 
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force 
 
-.\buildContainer.ps1
+.\src\SQLiteTest\buildContainer.ps1
